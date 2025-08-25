@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+.navbar-brand{
+    font-family: Merienda;
+
+}
+nav .nav-link{
+    position: relative;
+    display: inline-block;
+}
+.nav-link::before,
+.nav-link::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: #0984e3;
+    transition: .4s;
+}
+.nav-link::before{
+    top: 0;
+    left: 0;
+}
+.nav-link::after{
+    bottom: 0;
+    right: 0;
+}
+.nav-link:hover::before,
+.nav-link:hover::after{
+    width: 100%;
+}
+.main-name{
+    font-family: Merienda;
+}
